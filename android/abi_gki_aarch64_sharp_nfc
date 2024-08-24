@@ -1,0 +1,7 @@
+#Add symbol for NFC
+[abi_symbol_list]
+# required by pn553_i2c.ko
+  down_timeout
+# required by p73.ko
+  spi_bus_type
+  i2c_bus_type

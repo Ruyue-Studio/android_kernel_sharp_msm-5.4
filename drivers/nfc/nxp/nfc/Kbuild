@@ -1,0 +1,9 @@
+# SHARP EXTENDED MOD-Start CUST-ID:0273
+obj-$(CONFIG_NXP_NFC_I2C) := pn553_i2c.o
+
+pn553_i2c-y := common.o \
+               common_ese.o \
+               i2c_drv.o
+
+ccflags-y += -DDYNAMIC_DEBUG_MODULE
+# SHARP EXTENDED MOD-End CUST-ID:0273

@@ -1,0 +1,4 @@
+#Add symbol for FS
+[abi_symbol_list]
+# required by incrementalfs.ko
+  revert_creds

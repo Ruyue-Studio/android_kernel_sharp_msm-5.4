@@ -1,0 +1,28 @@
+# drivers/soc/qcom/sharp/pnp/Kconfig
+
+menu "SHARP Power and Performance(PnP)"
+
+config SHARP_PNP
+	bool "SHARP PnP customize"
+	default n
+
+config SHARP_PNP_CPUFREQ_MODULE
+	tristate "SHARP PnP cpufreq driver module support"
+	default n
+
+config SHARP_PNP_SLEEP
+	bool "Enable SHARP PnP customize sleep"
+	depends on SHARP_PNP
+	default n
+
+config SHARP_PNP_SLEEP_DEBUG
+	bool "Enable SHARP PnP customize sleep debug"
+	depends on SHARP_PNP
+	default n
+
+config SHARP_PNP_SLEEP_SLEEPLOG
+	bool "Enable SHARP PnP customize sleep sleeplog"
+	depends on SHARP_PNP
+	default n
+
+endmenu
